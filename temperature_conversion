@@ -1,0 +1,56 @@
+#for degree Celsius into Fahrenheit and kelvin conversion 
+def deg():
+  d=float(input("enter a temperature in degree Celsius"))
+  n=int(input("enter 1 for Fahrenheit and 2 for Kelvin conversion"))
+  if n==1:
+    Fahrenheit=(d*9/5)+32;
+    print("temperature in Fahrenheit is", Fahrenheit)
+  elif n==2:
+    kelvin=d+273.15;
+    print("temperature in Kelvin is",kelvin)
+  else:
+      print("try again")
+
+
+#for Fahrenheit into degree and kelvin conversion
+def fahr():
+  d=float(input("enter a temperature in Fahrenheit"))
+  n=int(input("enter 1 for degree_celcius and 2 for Kelvin conversion"))
+  if n==1:
+    degree_celsius=(d-32)*(5/9);
+    print("temperature in degree Celsius is",degree_celsius)
+  elif n==2:
+    kelvin=(d-32)*(9/5)+273.15;
+    print("temperature in Kelvin is",kelvin)
+  else:
+    print("try again")
+
+#for kelvin into degree Celsius and Fahrenheit conversion
+def kel():
+  d=float(input("enter a temperature in kelvin"))
+  n=int(input("enter 1 for degree_celcius and 2 for Kelvin conversion"))
+  if n==1:
+    degree_celsius=d-273.15;
+    print("temperature in degree Celsius is",degree_celsius)
+  elif n==2:
+    Fahrenheit=(d-273.15)*(9/5)+32;
+    print("temperature in Fahrenheit is", Fahrenheit)
+  else:
+    print("try again")
+    
+#condition check
+while True:
+  temp=int(input("enter 1 for conversion of degree Celsius into Fahrenheit and kelvin,2 for conversion of Fahrenheit into degree Celsius and kelvin,3 for conversion of kelvin into degree Celsius and Fahrenheit \n"))
+  if temp==1:
+    print(deg())
+    print("")
+  elif temp==2:
+    print(fahr())
+    print("")
+  elif temp==3:
+    print(kel())
+    print("")
+  else:
+    print("exit")
+    print("")
+    print("")
